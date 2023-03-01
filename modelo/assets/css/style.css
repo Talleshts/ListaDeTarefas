@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(62, 145, 201);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.botoes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.inputTarefa{
+  display: flex;
+  justify-content: center;
+}
+
+.input{
+
+}
+
+li{
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+  align-items: end;
+  border-bottom: rgb(37, 25, 206) solid 1px;
+  margin-bottom: 5px;
+  font-family: 'Shantell Sans', cursive;;
+}
+
+h1{
+  font-family: 'Aboreto', cursive;
+  font-weight: bold;
+}
+
+
+.btn-tarefa{
+  background-image: url("../img/plus.png");
+  margin-left: 5px;
+}
+.btn-finalizar{
+  background-image: url("../img/verificado.png");
+}
+.btn-remover{
+  background-image: url("../img/botao-x.png");
+}
+
+.btn-remover, .btn-finalizar{
+  margin-bottom: 4px;
+}
+
+
+.btn-remover, .btn-finalizar, .btn-tarefa{
+  border-radius: 20px 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 30px;
+  background-position: 0%;
+  background-repeat: no-repeat;
+  border:transparent;
+  box-shadow: black 0px 2px 1px;
+}
+
+
+button:active{
+  background-color: rgba(0, 0, 0, 0.377);
+  position: relative;
+  top: 1px;
+  box-shadow: black 0px 0px 1px;
+
+}
+
